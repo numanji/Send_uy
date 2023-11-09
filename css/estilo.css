@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* FUENTES A UTLIZAR EN EL PROYECTO */
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Varela+Round&display=swap');
+
+/* ESTILOS DEL HEADER */
+header{
+    display: flex;
+    justify-content:baseline;
+    position: relative;
+    background-image: url(../img/headerimg.png);    
+    position: sticky;
+    top: 0;
+    height: 100px;
+}
+header .logoPrincipal{
+    width: 100px;
+    height: 100px;
+    margin: 0px 40px;
+}
+header nav{
+    display: inline;
+    margin:40px 10px;
+}
+header li{
+    display: inline;
+    padding: 30px;
+    
+}
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+/* ESTILOS DEL BODY */
+body{
+    background-color: #c8d6f5;
+    font-family: 'Varela Round', sans-serif;
+}
+body img{
+    width: 100px;
+    height: 100px;
+    margin: 5px 40px;
+    border-radius: 5px;
+    image-rendering: optimizeQuality;
+}
+p {
+    font-family: 'Varela Round', sans-serif;
+
+}
+/* ESTILOS DEL FOOTER */
+footer{
+    margin: 15PX;
+    height: 150px;
+}
+
+
+.contenedor{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 5px;
+        
+}
+.tituloPrincipal{
+    text-align: center  ;
+    font-family: 'Dancing Script', cursive;
+    margin: 15px;
+    padding: 10px;
+           
+}
+.tarjeta{
+    align-items: center;
+    text-align: center;
+    margin: 15px;
+    padding: 15px;
+}
+.tarjeta:hover {
+    transform: scale(1.15); /* Escala la tarjeta al 105% del tamaño original */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega una sombra */
+}
+.titulos{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+}
+
+.whatsapp{
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+.productos{
+    display: flex;
+    margin: 10px;
+}
+
+
+/* ESTILOS DE LOS FORMULARIOS DE LAS PAGINAS revendedores.html y contacto.html */
+    /* Aplico estilo geberal al form */
+form{ 
+    background-color: #c8d6f5;
+    padding-left: 0%;
+    padding-right: 50%;
+    font-family: 'Varela Round', sans-serif;
+}
+    /* Aplico estilo class a class */
+form .Nombre{
+    padding:inherit;
+    }
+form .Apellido{
+    padding: inherit;
+    margin-top: 10px;
+}
+form .number{
+    padding: inherit;
+    margin-top: 10px;
+}
+form .Correoelectronico{
+    padding: inherit;
+    margin-top: 10px;
+}
+form .textarea {
+    padding: inherit;
+    margin-top: 10px;
+}
+form .enviar{
+    padding: inherit, 5px;
+    padding-left: 20px;
+    padding-right: 70px;
+}
+/* aplico estilos a productos.html */
+.productosPrincipal{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 5px 15px;
+    text-align: center;
+    gap: 15px;
+    
+}
+/* imagenes de la pagina principal */
+.slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slideHijo{
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    margin: 20px 0;
+    padding: 0;
+}
+.slideHijo:hover {
+    transform: scale(1.15); /* Escala la tarjeta al 105% del tamaño original */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega una sombra */
+}
+
+/* productos.html */
+.card{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.card img {
+    max-width: 100%;
+}
+.card:hover {
+    transform: scale(1.15); /* Escala la tarjeta al 105% del tamaño original */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega una sombra */
+}
+article button{
+    background-color: greenyellow;
+    margin: 15PX;
+    text-transform: uppercase;
+    border-bottom: 1PX solid black;
+    border-radius: 5PX;
+    cursor: pointer;
+}
+button:focus{
+    background-color: blue;
+    color: white;
+}
